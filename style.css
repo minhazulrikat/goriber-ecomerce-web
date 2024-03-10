@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 3vw;
+    color: black;
+    font-weight: bolder;
+    position: absolute;
+    left: 7vw;
+    top: 10vh;
+}
+
+.searchArea {
+    width: 170px;
+    height: 40px;
+    position: fixed;
+    right: 90px;
+    top: 120px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid rgba(167, 158, 245, 0.2);
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    box-sizing: border-box;
+    z-index: 1;
+
+}
+
+.searchArea input {
+    outline: none;
+    border: none;
+    font-family: Calibri;
+    width: 90px;
+    height: 20px;
+    padding: 0px 10px;
+    background-color: transparent;
+    font-size: 1rem;
+
+
+}
+
+.searchArea input::placeholder {
+    font-size: 14px;
+    font-family: roboto;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.firstImage {
+    width: 35vw;
+    height: 40vh;
+    position: absolute;
+    top: 220px;
+    left: 100px;
+}
+
+.firstImage img {
+    width: 100%;
+
+}
+
+.summerOffer {
+    position: absolute;
+    right: 10vw;
+    top: 55vh;
+    text-transform: uppercase;
+
+}
+
+.summerOffer h1,
+h2 {
+    color: #3d3d4a;
+    line-height: 70px;
+    font-size: 55px;
+    letter-spacing: 3px;
+}
+
+.summerOffer h1 {
+    letter-spacing: 16px;
+}
+
+span {
+    color: #7a72ff;
+}
+
+.btn {
+    width: 170px;
+    height: 49px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2f2e41;
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border: transparent !important;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+}
+
+.btn:hover {
+    background-color: #1107c9;
+}
+
+.socialLink {
+    display: flex;
+    flex-direction: column;
+    width: 51px;
+    height: 217px;
+    background-color: #ffff;
+    font-size: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    position: fixed;
+    top: 40vh;
+    left: 3vw;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.socialLink a {
+    color: #2f2e41;
+
+}
+
+.fa-facebook-f:hover {
+    color: #2014f6;
+}
+
+.fa-twitter:hover {
+    color: rgb(0, 132, 255);
+}
+
+.fa-instagram:hover {
+    color: palevioletred;
+}
+
+.fa-youtube:hover {
+    color: red;
+}
+
+.productSection {
+    width: 85%;
+    background-size: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    margin-top: 800px;
+}
+
+.productSection h3 {
+    font-size: 32px;
+    font-family: myriad pro;
+    padding: 15px;
+    line-height: 20px;
+    letter-spacing: 2px;
+
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.productBox {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 30px;
+    padding: 0px 0px 40px 0;
+
+
+}
+
+.productBox:hover {
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.productBox img {
+    height: 180px;
+
+}
+
+
+.productBox p {
+    font-family: myriad pro;
+    opacity: 0.5;
+}
+
+.productBox a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+
+}
+
+.buyBox {
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    font-size: 1rem;
+    font-family: poppins;
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    background: linear-gradient(120deg, #6b60ec 20%, #a166f4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.productBox:hover .buyBox {
+    display: flex;
+
+}
+
+.productBox:hover a:last-child {
+    color: white;
+    font-family: poppins;
+    font-size: 1rem;
+    transition: all ease 0.3s;
+
+}
+
+.about {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 150px !important;
+}
+
+.about h1 {
+    font-size: 48px;
+
+}
+
+.about h4 {
+    font-size: 32px;
+    color: #333333;
+
+    /* font-weight: 400px; */
+
+}
+
+.about p {
+    margin: 10px;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+
+/* .about button{
+    width: 120px;
+    height: 40px;
+    font-size: 22px;
+    padding: 2px;
+    background-color: #6b60ec;
+    color: white;
+    font-family: Calibri;
+    border: none;
+    border-radius: 20px;
+
+} */
+.para {
+    width: 40%;
+}
+
+.about>.image {
+    width: 35vw;
+    height: 40vh;
+}
+
+.about>.image>img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    flex-direction: column;
+}
+
+footer h1 {
+    margin: 40px 0px 10px 0;
+    font-size: 30px;
+
+}
+
+.emailSection {
+    width: 450px;
+    height: 70px;
+    /* border: 1px solid ; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+.emailSection input {
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+
+.emailSection button {
+    width: 14vh;
+    height: 7vh;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    background-color: #333333;
+    color: #fff;
+}
+
+.policy {
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
